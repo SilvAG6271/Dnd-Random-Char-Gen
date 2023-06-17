@@ -1,0 +1,251 @@
+html {
+    background-image: url("DNG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+body {
+    border: 25px groove rgb(185, 185, 34);
+}
+
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 0%;
+}
+
+.header {
+    justify-content: center;
+    align-content: center;
+    background-image: url("../assets/images/green-velvet.png");
+    background-position-x: center;
+    background-position-y: center;
+    border: groove 10px rgb(185, 185, 34);
+    width: fit-content;
+    margin-top: 35pt;
+
+
+}
+
+.stats {
+  
+    justify-content: center;
+    align-content: center;
+    background-image: url("Scroll-PNG\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 11rem 0;
+    width: 35%;
+    
+
+
+
+
+
+}
+
+#save-btn {
+    background-image: url("wood board.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    color: silver;
+    font-family: 'Tangerine', cursive;
+    font-size: 2.5rem;
+    border: 10px groove silver;
+    border-radius: 25px 0px 25px 0px;
+    padding: 25px;
+    text-decoration: underline;
+}
+
+#generate-btn {
+    background-image: url("wood board.jpg");
+    background-position: center;
+    margin: 1rem;
+    color: silver;
+    font-family: 'Tangerine', cursive;
+    font-size: 2.5rem;
+    border: 10px groove silver;
+    border-radius: 25px 0px 25px 0px;
+    padding: 25px;
+    text-decoration: underline;
+}
+#reset-btn {
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 1rem;
+    background-image: url("wood board.jpg");
+    background-position: center;
+    color: silver;
+    font-family: 'Tangerine', cursive;
+    font-size: 2rem;
+    border: 10px groove silver;
+    border-radius: 25px 0px 25px 0px;
+    padding: 25px;
+    text-decoration: underline;
+}
+#header-script {
+    color: rgb(241, 99, 4);
+    font-weight: bolder;
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
+    
+
+}
+
+#stat-script {
+    color: silver;
+    background-image: url("../assets/images/green-velvet.png");
+    background-position: center;
+    border: groove 10px silver;
+    padding: 15px;
+    font-family: 'Tangerine', cursive;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+@keyframes wave {
+
+    50% {
+        border-radius: 0 25px 0 25px;
+    }
+
+
+
+    50% {
+        margin-left: 7%;
+
+        margin-right: 10%;
+    }
+
+}
+
+#generate-btn:hover {
+
+    animation: wave 1s ease-in-out infinite;
+
+
+}
+
+#generate-btn:active {
+    transform: scale(1.1);
+}
+
+
+#save-btn:hover {
+
+    animation: wave 1s ease-in-out  infinite;
+
+}
+
+#save-btn:active {
+    transform: scale(1.1);
+}
+
+
+#reset-btn:active{
+    transform: scale(1.1);
+}
+
+#script {
+
+    color: rgb(0, 59, 0);
+    font-weight: bolder;
+}
+
+.char-input {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-position: center;
+    background-image: url("old-paper-texture.png");
+    border-style: groove rgb(185, 185, 34);
+    width:fit-content;
+} 
+
+#race-image {
+    
+}
+
+.m-5,
+#attack-input,
+#defense-input,
+#dexterity-input,
+#charisma-input,
+#constitution-input {
+    background-image: url("red-velvet.png");
+    background-position-x: center;
+    background-position-y: center;
+    border: 4px silver;
+    border-style: inset;
+    color: silver;
+    text-align: center;
+    border-radius: 20% 20% 20% 20%;
+    padding: 12px;
+    font-size: 1.3rem;
+}
+
+::placeholder {
+    color: silver;
+    text-align: center;
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .row {
+        margin: 0% 10%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .stats {
+        width: 100%;
+    }
+}
+
+
+/*style for displaying local storage on page */
+body {
+    position: relative;
+}
+
+#profile-section {
+    color: white;
+    display:flex;
+    width: 10%;
+    border-radius: 5%;
+    background-image: url("red-velvet.png");
+    display:block;
+     position:absolute;
+    top: 15%; 
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin:2rem;
+}
+
+.info {
+    width:auto;
+}
+.pad-btm {
+    padding-bottom: 8%;
+}
+
+.hide {
+    display: none;
+}

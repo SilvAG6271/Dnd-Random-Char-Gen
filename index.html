@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+        integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>DnD Character Generator</title>
+</head>
+
+<body>
+    <div class="row m-4">
+        <div class="header">
+            <header>
+                <h1 class="p-5 has-text-centered" id="header-script"> Create Your Own Character </h1>
+            </header>
+        </div>
+    </div>
+    <section >
+        <button class="button is-normal" id="reset-btn" type="button"> Reset </button>
+    </section>
+    <section class="section is-small has-text-centered">
+        <button id="generate-btn" type="button" class="button is-large"> Create Character </button>
+        <div class="row2">
+            <section >
+                <button class="button is-large" id="save-btn" type="button" onclick="visibility:visible"> Save Character </button>
+            </section>
+            
+        </div>
+        <div id="race-image">
+        </div>
+        
+    </section>
+    <section id="profile-section">
+        <section id="info">
+
+        </section>
+    </section>
+    <div class="row">
+        <div class="char-input">
+            <div id="char-info" class="has-text-centered">
+                
+
+                <textarea id="name-El" contentEditable="true" class="m-5" type="text" placeholder="Character Name"
+                    class="character-input" cols="25" rows="2"></textarea>
+                <textarea id="class-El" class="m-5" type="text" placeholder="Class" class="class-input" cols="25"
+                    rows="2"></textarea>
+                <textarea id="race-El" class="m-5" type="text" placeholder="Race" class="race-input" cols="25"
+                    rows="2"></textarea>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <div class="row">
+                        <div class="stats m-3">
+                            <h2 class="m-6 has-text-centered" id="stat-script">Stats</h2>
+                            <ul class="mt-5 is-focus has-text-centered">
+                                <h6 class="has-text-black is-size-4 has-text-weight-bold">Attack</h6>
+                                <li id="attack" class="p-4"> <input type="text" placeholder="Attack" id="attack-input"> </li>
+                                <h6 class="has-text-black is-size-4 has-text-weight-bold">Defense</h6>
+                                <li class="p-4"> <input type="text" placeholder="Defense" id="defense-input"> </li>
+                                <h6 class="has-text-black is-size-4 has-text-weight-bold">Dexterity</h6>
+                                <li class="p-4"> <input type="text" placeholder="Dexterity" id="dexterity-input"> </li>
+                                <h6 class="has-text-black is-size-4 has-text-weight-bold">Charisma</h6>
+                                <li class="p-4"> <input type="text" placeholder="Charisma" id="charisma-input"> </li>
+                                <h6 class="has-text-black is-size-4 has-text-weight-bold">Constitution</h6>
+                                <li class="p-4" id="bottom"> <input type="text" placeholder="Constitution" id="constitution-input">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            
+        
+     
+
+    
+    
+    
+            
+              
+
+    
+
+
+    <script src="assets\script.js"></script>
+</body>
+
+</html>
